@@ -1,0 +1,905 @@
+*******************
+GIT Crash Course   -2hr
+*******************
+
+*******************
+3. Introduction to GIT
+*******************
+
+whatwill you learn today...?
+1>what is git?
+2>what is version control?
+3>VCS tools history.
+
+what is git?
+Git is a version control system for tracking changes in computer files.
+
+Version Control:
+it is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+
+Advantages of Git:
+1>Track changes happening
+2>Rollback (Revert files to a previous state)
+3>compare changes and search through history
+4>coordinates works between multiple developers
+5>Local Repos and remote repos.
+
+https://github.com/features
+
+1>code review
+2>project management
+3>integrations
+4>Team managemenet
+5>social coding
+6>documentation code hosting
+
+
+*******************
+History:
+*******************
+1973 
+-SCCM 1 file
+-RCS x files,1 Dir
+-CVS x files,x Dir,1 user
+
+2000
+-SVN x files,x Dir,x user
+
+2005
+GIT 7 april 2005(Linus Torvalds)
+
+******************************************
+4. GIT Installation
+******************************************
+
+git installation
+How to confirgure git
+
+google search:
+git download=>https://git-scm.com/downloads
+
+Dowaload:Mac OS X  , windows , Linux/Unix
+
+open the command prompt:
+>git --version
+
+
+C:\Users\Suraj>git --version
+git version 2.27.0.windows.1
+
+
+Git Installation:
+Linux(Fedora):sudo yum install git
+Linux(Deboan):sudo apt-get install git
+Mac :https://git-scm.com/download/mac
+Windows:https://git-scm.com/download/win
+
+verify the installed version:git --version
+
+>git config --global user.name "Suraj P"
+>git config --global user.email "pawarsuraj614@gmail.com"
+
+>git config --list
+user.name=Suraj P
+user.email=pawarsuraj614@gmail.com
+
+******************************************
+5. Understanding GIT Terminology
+******************************************
+Git Terminology:
+Repository
+clone
+add and commit
+push
+branch
+fetch
+merge
+pull
+
+Repository:
+1>Repo/Repository is storage space for our project
+2>we will have some hidden files with .git
+3>Local Repo is an our local device.
+4>Remote Repo is somewhere else.
+
+Clone:
+1>copies an existing git repo from a remote source.
+2>get all files and history to local device
+3>create a remote connection called "origin" that points back to the original repository.
+
+Add and Commit:
+1>use "git add" to add changes in working directory to staging area.
+Git will include these changes in next commit.
+2>Use "git commit" to commit the stages snapshot to history.
+3>use git commit -am "message" to add and commit in one command.
+
+Push:
+1>use "git push" to transfer commits from local repo to a remote repo.
+2>we can use --force to force push (not recommended).
+
+Branch:(local branch-master)
+1>A branch is an isolated copy of our working environment and history.
+2>commits are recorded in the history for the current branch
+3>default branch is "Master"
+
+Fetch:
+1>from time to time ,our local repo will go out of sync with remote repository.
+2>"git fetch" gets the commits from the remote repository.
+3>we can review these and we can merge using "git merge" command.
+
+Merge:
+1>when multiple users works on same page/functionality conflict may happen with changes.
+2>taking commits/history from one branch and merging to another branch.
+3>if git unable to merge any files,we have to manually merge these.
+
+Pull:
+git fetch +git merge=pull
+
+******************************************
+6. Add, Commit and Status Commands
+******************************************
+1>initialize git
+2>first commit
+
+mkdir firstproject
+ls
+cd fistproject/
+pwd
+ls
+ls -a
+
+>git init
+>vim resume.txt
+Name:Suraj Pawar
+
+
+>git status
+(red)=>working directory
+
+>git add remuse.txt
+(green)=>stage directory
+
+>git add .
+>git status
+rexume.txt =>New file :resume.txt
+
+>git commit
+>git rm --cached resume.txt
+
+>git commit -m "This is my first commit"
+>git status
+nothing to commit,working tree clear
+
+
+
+
+>vim resume.txt
+Name:Suraj Pawar
+Skills:
+Contact Number:
+
+
+>git status
+modified:resume.txt
+>git add resume.txt(red)
+
+>git status
+modified:resume.txt(green)
+
+>git commit -m "added contact information"
+>git status
+
+>git log
+
+
+
+User name: Suraj Pawar
+Password:XXXXXXXX. 
+Remember my password. 
+Login. 
+Forgot Password.
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/SurajPawar15-smart/myproject.git
+git push -u origin main
+
+
+
+*****Practices Exercise*******************************************************
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git init
+Initialized empty Git repository in C:/Users/Suraj/Desktop/myproject/.git/
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myapp.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git add myapp.txt
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   myapp.txt
+
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git commit -m "my details"
+[master (root-commit) 4c8110c] my details
+ 1 file changed, 2 insertions(+)
+ create mode 100644 myapp.txt
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   myapp.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git add .
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git commit -m "my details modified"
+[master 3ecfa1b] my details modified
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$
+
+
+************************************************************
+
+7. Understanding GIT Logs
+
+git logs
+
+1>3ecfa1b2058e4e5b85fac157c408f126b002580a
+2>40 character long
+3>Hexa decimal(0-9,a-f)
+4>sha1 program
+
+git diff id1..id2
+
+git log
+--oneline
+--since=YYYY-MM-DD
+--untill=YYYY-MM-DD
+--author="Username"
+-x
+--grep
+
+**************************************************************
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git log
+commit 3ecfa1b2058e4e5b85fac157c408f126b002580a (HEAD -> master)
+Author: SurajPawar15-smart <pawarsuraj614@gmail.com>
+Date:   Sun Jan 1 10:43:47 2023 +0530
+
+    my details modified
+
+commit 4c8110c1bebfe0f99bb1c7c48a2baa33baea517a
+Author: SurajPawar15-smart <pawarsuraj614@gmail.com>
+Date:   Sun Jan 1 10:42:00 2023 +0530
+
+    my details
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git show 4c8110c1bebfe0f99bb1c7c48a2baa33baea517a
+commit 4c8110c1bebfe0f99bb1c7c48a2baa33baea517a
+Author: SurajPawar15-smart <pawarsuraj614@gmail.com>
+Date:   Sun Jan 1 10:42:00 2023 +0530
+
+    my details
+
+diff --git a/myapp.txt b/myapp.txt
+new file mode 100644
+index 0000000..d2aea8b
+--- /dev/null
++++ b/myapp.txt
+@@ -0,0 +1,2 @@
++User name: Suraj Pawar
++Password:XXXXXXXX.
+\ No newline at end of file
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git diff 4c8110c1bebfe0f99bb1c7c48a2baa33baea517a..3ecfa1b2058e4e5b85fac157c408f126b002580a
+diff --git a/myapp.txt b/myapp.txt
+index d2aea8b..a6ef071 100644
+--- a/myapp.txt
++++ b/myapp.txt
+@@ -1,2 +1,4 @@
+ User name: Suraj Pawar
+-Password:XXXXXXXX.
+\ No newline at end of file
++Password:XXXXXXXX.
++Remember my password.
++Login.
+\ No newline at end of file
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git log --oneline
+3ecfa1b (HEAD -> master) my details modified
+4c8110c my details
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git diff 4c8110c..3ecfa1b
+diff --git a/myapp.txt b/myapp.txt
+index d2aea8b..a6ef071 100644
+--- a/myapp.txt
++++ b/myapp.txt
+@@ -1,2 +1,4 @@
+ User name: Suraj Pawar
+-Password:XXXXXXXX.
+\ No newline at end of file
++Password:XXXXXXXX.
++Remember my password.
++Login.
+\ No newline at end of file
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git log --oneline --author="SurajPawar15-smart"
+3ecfa1b (HEAD -> master) my details modified
+4c8110c my details
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git log --oneline --author=SurajPawar15-smart -2
+3ecfa1b (HEAD -> master) my details modified
+4c8110c my details
+
+*****************************************************************
+>git show 4c8110c1bebfe0f99bb1c7c48a2baa33baea517a
+>git diff 4c8110c1bebfe0f99bb1c7c48a2baa33baea517a..3ecfa1b2058e4e5b85fac157c408f126b002580a
+>git log --oneline
+>git diff 4c8110c..3ecfa1b
+>git log --oneline --author="SurajPawar15-smart"
+>git log --oneline --author=SurajPawar15-smart -2 //last two commit
+
+*************************
+8. GIT Ignore
+*************************
+1>git will not track files stored under "proj_dire/.gitignore" directory.
+2>create a directory under project folder with .gitignore and all the required file formats/patterns to ignore.
+
+ex:patterns:
+*.bkp
+*.class
+[abc]*.txt
+*.php
+!index.html
+
+*******************************
+>git status
+>touch backup.bkp      //backup files
+>touch index.html
+>touch aa.txt
+>touch java.class
+
+>git status
+backup.bkp     
+index.html
+aa.txt
+java.class
+
+>vim .gitignore   //create a new file name as .gitignore
+*.bkp
+*.java
+
+>git status
+.gitignore
+aa.txt
+!index.html
+
+>vim .gitignore 
+*.php
+!index.html
+[abc]*.txt
+
+Google Search:
+https://www.lifewire.com/gitignore-file-4153363#:~:text=on%20your%20computer.-,What%20Is%20a%20GITIGNORE%20File%3F,in%20a%20given%20source%20code.
+
+*****Practices ******************************************
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        StudentController.java
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$
+***********************************************
+
+***********************************************
+9. Github Signup and First Repo Creation
+***********************************************
+
+github account signup
+create a repo
+clone repo
+
+githum.com
+
+Create Account
+Username:
+Email address:
+Password:
+Email preferences:
+Verify your account
+Next Select a plan
+
+
+choose plan:individual =>free plane
+$0 {The basic of Github for every developer}
+1>Unlimited public repositories
+2>Unlimited private repositories
+3>Limited to 3 collaborators  for private repositories
+4>Issues and bug tracking
+5>Project Management
+
+How much programming experience do you have?
+None (select)
+A little
+A moderate amount 
+A lot
+
+What do you plan to use Github for? (select up to 3)
+1>Learn to code
+2>Learn Git and Github
+3>Host a project (Repository)
+4>Create a website with Github Pages
+5>Find and contribute to open source
+6>School work and student projects.
+
+Please verify your email address
+
+Create a new repository:
+Owner Repository name:
+Description:My first repo in github
+Public
+Initialize this repository with a README
+
+create repositroy
+
+create a new directory:New Folder=>SurajProjBest
+>git clone https://github.com/SurajPawar15-smart/myproject.git
+
+
+********************************
+10. GIT Push Command
+********************************
+what will you learn Today...???
+
+1>commit to remote repository
+2>Push to origin
+3>Default push configuuration
+
+>git push -u origin master
+Username:SurajPawar15-smart
+Passowrd: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
+
+
+>git config --global push.default simple
+>git push
+username:
+password:
+
+*********************************************
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git remote add origin https://github.com/SurajPawar15-smart/myproject.git
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 825 bytes | 825.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SurajPawar15-smart/myproject.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+*********************************************
+
+
+
+********************************
+11. Adding and Removing Files
+********************************
+
+1>Adding a new file
+2>statremoving a new file
+
+
+>git status
+>vim testfile.txt
+This is a new file
+
+>git status
+untracked changes
+>git commit -am "my new text"
+>git add --all
+
+>git status            //staging/Cache area
+>git rm -f textfile.txt
+>git status
+
+>vim textfile.txt
+This is a new file odified
+
+>git add .
+>git status
+>git commit -m "my new testfile"
+>git status
+nothing to commit,working tree clean
+
+****************************************
+delete file in local directory:
+****************************************
+>git rm testfile.txt
+>git status
+>git commit -m "Deleted testfile"
+Deleted test
+>git status
+
+
+git add --all                    :to commit all new files
+git commit -m "commit message"
+git rm <filename>                :to remove a file from local repo
+git commit -m "commit message"
+
+
+
+mydata file name:
+********************
+Name:Sraj Pawar
+Std:class 9
+School Name:K.V School
+Address:Pune
+Contact No:9835746726
+
+
+****Practicals****Remove from stage/cache repo***********************************************************
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mydata.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git add --all
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mydata.txt
+
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git rm -f mydata.txt
+rm 'mydata.txt'
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+
+********Remove from local repo*********************************************
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git rm mydata.txt
+rm 'mydata.txt'
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    mydata.txt
+
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git commit -m "deleted my file"
+[master 1968291] deleted my file
+ 1 file changed, 5 deletions(-)
+ delete mode 100644 mydata.txt
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+*********************************************************************
+
+*******************************
+12. Pull Requests
+*******************************
+pull changes from Remote Repo
+
+>git fetch
+>git merge
+
+Repository:
+Step1:git fetch
+Step2:git merge
+
+but the same we can perform using one command called "push".
+git pull origin master:to commit all new files
+
+
+
+>git fetch
+>git pull origin master
+>
+
+
+
+
+**************
+git status
+git fetch
+git merge
+
+or
+
+git pull origin master
+
+
+
+add modified
+this is user three
+commit:edit from user3
+
+
+git pull 
+
+
+*************************************************************
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 737 bytes | 3.00 KiB/s, done.
+From https://github.com/SurajPawar15-smart/myproject
+   357485f..1f1d196  master     -> origin/master
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git merge
+Merge made by the 'recursive' strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git pull origin master
+From https://github.com/SurajPawar15-smart/myproject
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 862 bytes | 5.00 KiB/s, done.
+From https://github.com/SurajPawar15-smart/myproject
+   1f1d196..75087eb  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 733 bytes | 9.00 KiB/s, done.
+From https://github.com/SurajPawar15-smart/myproject
+   75087eb..5adc88c  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ README.md | 1 -
+ 1 file changed, 1 deletion(-)
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$
+
+*********************************************************************
+13. Branching
+*********************************
+How to create a branch
+
+1>a branch is an isolated copy of our working environment and history
+2>default branch is "Master"
+
+Git checkout:allow us to switch to a new branch
+git checkout "feature/1"
+git push (or) git push origin feature/1
+
+*******
+Branch master:feature/1
+crate branch:feature/1
+
+
+>git fetch
+[new branch ] feature/1 ->originfeature/1
+
+>git status
+on branch master
+
+>git checkout feature/1
+switched to a new branch "feature/1"
+
+>git status
+on branch feature/1
+
+>vim test.txt
+This is a test file for banching
+
+>git add .
+>git commit -m "branch testing"
+>git status
+on branch feature/1
+
+>git push origin feature/1
+username:
+password:
+
+Compare and pull request
+
+click on=>new pull request=>create pull request=>confirm merge 
+
+
+
+
+******************************************************
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git fetch
+From https://github.com/SurajPawar15-smart/myproject
+ * [new branch]      mydata     -> origin/mydata
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (master)
+$ git checkout mydata
+Switched to a new branch 'mydata'
+Branch 'mydata' set up to track remote branch 'mydata' from 'origin'.
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (mydata)
+$ git status
+On branch mydata
+Your branch is up to date with 'origin/mydata'.
+
+nothing to commit, working tree clean
+
+Note:Then create a file :myking and add text in that.
+
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (mydata)
+$ git add .
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (mydata)
+$ git commit -m "my king branch"
+[mydata 6c00127] my king branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 myking.txt
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (mydata)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SurajPawar15-smart/myproject.git
+   5adc88c..6c00127  mydata -> mydata
+
+Suraj@LAPTOP-KOQATQGH MINGW64 ~/Desktop/myproject (mydata)
+
+********************************************************************
+14. CICD with AWS Elastic Beanstalk
+*****************************************************************
+what is fork
+how to use github with AWS
+how to setup a CICD using GIT
+
+1>a fork is a copy of a repository
+2>forking a repository allows you to freely experiment with changes without affecting the original project
+3>commonly ,forks are used o propose changes to someone else's project.
+4>use someone else's projevt as a starting point for your own idea.
+
+Project Done
+******************************************************
+https://github.com/SurajPawar15-smart/myproject
+*****************************************************
+
+
+
+
+
+
+
+
+
+

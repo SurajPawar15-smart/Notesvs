@@ -1,0 +1,177 @@
+***********************************************************
+Real-World Example: Git and GitHub on Windows - Basics
+***********************************************************
+Section 2:Fast Examples of Why git is Userful:
+
+2. Example 1 - To not lose your files
+if your hard drive crash it so for the safer purpose you can use this github were you can put your all important file or folders.
+
+3. Example 2 - To work with other People in a Smart way
+
+>git clone url
+>
+projectperson1
+create a new file:fil1.txt
+
+projectperson2
+create a new file:fil1.txt
+
+person2>
+>git add .
+>git commit -m "my file2"
+>git push
+
+
+person1:
+>git pull
+>git status
+>git add .
+>git commit -m "my file1"
+>git push
+
+Section 3:Getting started with git:
+***************************************
+4. What is Git?
+
+5. How to Download and Install Git?
+
+6. Getting Code from a Remove Git Repository
+
+>git clone url
+
+Section 4:getting started with windows command prompt:
+*********************************************************
+7. What is the Windows Command Prompt
+8. Why do we need the Windows Command Prompt in this course
+9. How to Open the Windows Command Prompt (cmd.exe) via Explorer
+
+10. How to Open the Windows Command Prompt (cmd.exe) via Run
+windows+R =>open the command prompt:cmd
+
+11. How to Change the Current Working Directory in Windows Command Prompt?
+
+12. How to Easily Copy the Path of Every folder on Windows
+
+
+13. How I move between directories in Windows Command Prompt
+
+14. What is the difference between Git Bash and Windows Command Prompt
+15. Good things about Git Bash - Linux Interface
+16. Bad things about Git Bash - Linux Interface
+17. Good things about Windows Command Prompt - Good Windows Integration
+18. Why I prefer using the Windows Command Prompt over Git Bash
+
+Section 6:Getting started with Github:
+************************************************
+19. What is GitHub and Why it is Useful?
+20. Creating a new GitHub Repository
+21. Getting you GitHub repository to your PC (git clone)
+22. Deleting repositories in GitHub
+23. Creating and Deleting Organization Repositories
+24. Creating and Setup of an Empty Repository
+25. Working with GitHub repository via SSH
+
+
+26. Why I don't Enter my GitHub Username and Password every time
+27. The Git Config
+28. Setting our Git user.name and user.email
+29. Tell Git to remember our Passwords
+30. Tell Git to push only the current Branch
+31. Tell Git to support large files
+32. Tell Git to Disable compression and use less CPU and more Internet
+33. Tell Git to Commit without problems long paths and subfolders
+34. Automating the Setup Process for New People
+
+
+36. Getting Help for all Git commands (git help)
+
+>git help tutorial
+>git help workflows
+>git help config
+>git help add
+
+37. Getting a repository from the Internet to your PC (git clone)
+>git clone url
+
+38. Checking the Status of our Repository (git status)
+>git status
+
+39. Adding a file to a Git repository and Track it (git add)
+git add .
+git add test.txt
+git add -A
+
+41. Commit your new file to your Local copy of the Git repository (git commit)
+
+
+42. Send your changes to the Remote repository (git push)
+
+43. Get the latest version of the Project and Sync your local copy (git pull)
+
+44. Fixing Project Conflicts (By hand)
+
+45. Repeat and have fun with friends
+
+
+
+46. Automatic Pull, Add, Commit and Push
+
+
+48. Automatic Tracking of all files for Commit
+
+git add -A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

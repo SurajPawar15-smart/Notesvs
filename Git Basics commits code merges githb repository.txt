@@ -1,0 +1,147 @@
+
+section 1:introduction to git
+1. What is Git & History of Git
+2. Version Control System. How it work?
+3. Online Git websites with git functionality and code hosting
+4. Why to use Git as a developer
+
+
+section 2:installation,create first github repository
+5. Create GitHub account
+6. Create clean code repository on Github
+7. Git install locally for different OS
+8. Create your first GitHub project
+9. Check-out and Check-In processes
+10. Staging environment
+
+section 3:working with your repository:
+11. Create a good coverage for your repository
+12. Create Readme file locally
+13. Commit your changes and publish them at Github
+14. Useful commands for Git
+15. Practice. Check-out process
+
+
+section 4:git merge:
+16. Branching workflow
+17. Git Merge Part1
+18. Git Merge Part2
+19. Git Flow simple example
+20. Git Merge simple example
+Play
+21. Git Rebasing
+22. Using Git merge
+23. Fast-forward and 3-way merge example
+24. Resolving conflict
+25. Git Merge summary and git merge conflict practice
+26. Git merge advanced example
+27. Additional materials about branching and merging
+28. Git CheatSheets
+29. Congratulations!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

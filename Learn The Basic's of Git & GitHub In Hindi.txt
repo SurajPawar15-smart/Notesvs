@@ -1,0 +1,263 @@
+****************************************************
+Learn The Basic's of Git & GitHub In Hindi
+****************************************************
+
+Welcome to this course on "Learn The Basic's of Git & GitHub In Hindi".
+
+Brought to you by : Develop2Deploy
+
+Note : Course is in Hindi Language and Not English.
+
+What is the course about?
+
+Learn about Git
+Learn about Git Command-Line Tool
+Learn about Msysgit & Git Extensions Software
+Learn about Git Commands
+Learn about GitHub
+What things you'll be learning in this course?
+
+What is Git and GitHub?
+Git Concepts
+File Management and Index
+Git Commands
+Initializing a Local Git Repository
+Configuring Remote Repository
+Adding files to a Repo
+Committing changes
+Pushing Changes to GitHub
+Adding a .gitignore file
+Creating a Branch
+Switching Between Branches
+Merging Branches
+Push local changes after merging
+Generating SSH Key for GitHub
+GitHub : Forks
+GitHub : Pull Requests
+GitHub : Cloning
+
+What you’ll learn
+Learn about Git
+Learn about Git Command-Line Tool
+Learn about Msysgit & Git Extensions Software
+Learn about Git Commands
+Learn about GitHub
+
+******************************
+2. What is Git & GitHub
+******************************
+google search:Github
+
+******************************
+3. GitHub Registration & Creating a Repository
+******************************
+
+******************************
+4. What is Repository, Git Object Store & Index
+******************************
+
+******************************
+5. File Management & Index
+******************************
+
+**********************************
+Git and Github basics:
+**********************************
+6. Installing Git Softwares
+7. Git Commands & Git Version Check
+
+>git --version
+
+8. Initializing a Local Git Repository
+create a folder:MyProject
+>git init
+
+9. Configuring Remote Git Repository
+
+>git add .
+>git
+
+10. Git Remote and GIt Remote Remove
+>git remote -v
+>git remote remove origin
+
+>get remote add myorigin url
+git remote -v
+
+11. Adding a File to the Local Repository and Git Status
+create a file inside that folder:
+My name is suraj pawar
+
+>git status
+>git add mytest.txt
+>git status
+>git add --all
+>git add .
+
+12. Removing a file from Index
+>git status
+(green)
+>git rm --cached mytest.txt
+>git status
+(red)
+
+>git add --all
+>git status
+
+13. Adding a .gitignore file
+
+create a new file:.gitignore save :all files
+
+>git status
+.gitignore
+.mytest.txt
+
+.gitignore
+*mytest.txt
+
+
+>git status
+.gitignore
+
+>git add .
+>git status
+
+
+14. Configuring the Global Commit Author
+
+15. Committing changes : Initial Commit
+>git commit -m "my message"
+
+16. Git Log Command
+>git log
+
+17. Pushing Changes to GitHub
+>git remote -v
+>git push myorigin master
+username:
+password:
+
+18. Generating SSH Key for GitHub
+
+19. Create , Checkout and Switch a New Branch
+
+
+>git branch
+*master
+>git branch mybranch
+*master
+mybranch
+>git checkout mybranch
+switched to branch "mybranch"
+
+>git branch
+master
+*mybranch
+
+or
+
+>git checkout -n newbranch
+switched to branch "mybranch"
+>git branch
+master
+mybranch
+*new branch
+
+>git checkout master
+switched to branch "master"
+>git branch
+*master
+mybranch
+new branch
+
+
+20. Merging Branches
+>git add newfile1.txt
+>git status
+>git commit -m "newfile added"
+>git push myorigin newbranch
+username:
+password:
+
+>git merge mybranch
+
+21. GitHub : Cloning
+>git clone url
+
+22. GitHub : Fork
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

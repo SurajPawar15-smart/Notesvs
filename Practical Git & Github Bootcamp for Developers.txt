@@ -1,0 +1,183 @@
+*******************************************************
+Practical Git & Github Bootcamp for Developers
+*******************************************************
+Git clone
+Git branch
+Git status
+Git merge
+Git stash
+Git resolve
+Git commit
+Git push
+Git revert
+Git history
+Git tag
+Git revert
+
+****************************************************************
+Section 1:Introduction and Setup:
+****************************************************************
+3. Creating your own Github account and Github repository
+>ranjanpandeysbp
+
+4. Understanding the initial git commands
+
+1>git init
+2>git add .
+3>git commit -m "mymessage"
+4>git remote add origin "url"
+5>git push -u origin master
+
+5. Generating Personal Access Token for your github account
+settings=>developer settings=>Personal access tokens=>Create new token
+
+Name :the new token
+select scope:as per the requirements.
+
+****************************************************************
+Section 2:Git operations vs git bash and terminals:
+****************************************************************
+6. Installing Git bash and Performing different git operations
+
+
+google search:git bash download =>Downloads -Git SCM =>exe file=>
+
+>git init
+>git add .
+>git commit -m "my message"
+>git remote add origin url
+>git push -u origin master
+
+git-commands.txt
+>git add .
+>git commit -m "added git command file"
+>git push
+
+
+>cd.. 
+>git clone url
+(download in the local laptop)
+
+
+7. Perform git operation through Terminal or Command Line
+
+create a new file:test2.html
+
+open a terminal:
+>git status
+>git add .
+>git status
+>git commit -m "my test file"
+>git remote add origin url
+>git push -u origin master
+
+8. Understanding Branching Strategy in Git & Github
+
+go to repository:
+master
+create a new branch:development
+
+
+9. Commit Push From VS code Editor
+
+master
++create new branch
+origin/master
+origin/development
+
+git symbole:click on three dot:
+
+git checkout master
+switched to branch "master"
+
+>git checkout development
+switched to branch "development"
+
+let do some modification:
+test.html :test file modified
+
+working tree :server(red)
+
+********************************
+1>Commit is done
+********************************
+message:modified code
+commit
+sync change
+(refresh)
+
+
+********************************
+2>push command
+********************************
+three dot:push=>push to development branch
+
+on repository:
+development had recent pushed less than a minute ago :compare & pull request
+
+10. Pull request and Review Process for code merge between branches:
+**************************************************************
+
+
+pull requests ==>new pull request  ==> n=base:master  <= compare:development  then =>create pull request=>
+
+modified code:
+write:
+please review my code
+then
+create pull request
+
+
+*file changes
+please improve code indentations
+
+
+11. Git Pull Branch change Git Clone from VS Code Editor:
+
+changes in development branch:
+test file is modified my me.
+
+come in master branch:
+test file 
+
+gitesymbole:three dot>pull >new code comes automatically.
+git clone url
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,239 @@
+A Gentle Introduction to Git - by SuperSimpleDev
+********************************************************
+1. Intro to the Course
+
+git=version history for code.
+
+
+2. Install Git
+git-scm.com/downloads
+
+
+3. Project Setup
+
+create a folder:git-tutorial
+
+config.js
+console.log("my name is suraj");
+console.log("my name is suraj");
+
+4. Git Setup
+
+
+5. Creating a Version / Commit
+
+>git init
+>git status
+Untrached files
+
+>git add config.js
+>git add src
+>git add .  //current folder as command line running it.
+>git status
+>git commit -m "Version 1"      //version = commit 
+
+>git config --global user.email ""
+>git config --global user.password ""
+>git commit -m "Version 1" 
+
+***add a new file in that project:
+index.js:
+console.log('index.js');
+
+change.js:
+console.log("chnage")
+
+>git add .
+>git commit -m "Version 1" --amend
+>git log
+
+6. Visualizing Git
+
+change.js:
+console.log("chnage")
+
+index.js:
+console.log('index.js');
+console.log('version2');
+
+vc code:
+github symbole: =>Message:   => +  =>tick
+
+***out of staging area:
+git reset config.js
+or
+git reset .
+
+
+git checkout -- config.js
+or
+git checkout -- .
+
+7. Completing Our Version History
+
+make some changes
+git add .
+git commit -m "Version 2"
+make some changes
+git add .
+git commit -m "Version 3"
+git log
+
+
+8. Viewing Previous Version of our Code:
+
+>git checkout commit_hash3
+
+>git log
+version 2
+version 1
+
+>git log --all
+
+
+
+>git log --all --graph
+>git checkout master
+
+git s  //alise
+
+>git config --global alisa.s "status"
+>git s
+
+
+>git config ---global alias.cm "commit -m"
+>git config ---global alias.co "chechout"
+>git cm
+>git co
+
+
+secrets.txt
+
+create a new file: 
+.gitignore
+secrets.txt
+
+>git status
+>git add .
+>git commit -m "add git ignore"
+
+
+>git log
+>rm -rf .git  //remove all the folder
+>git log
+
+
+We are entering a New Year in 2023 with a New Beginning - Ozar Ganpati Bappa Temple(Family Time)
+.
+.
+.
+I wish you a smashing new year filled with laughter...!!!
+.
+.
+.
+गणपती बाप्पा मोरया
+गणपती बाप्पा मोरया
+गणपती बाप्पा मोरया...!!!
+.
+.
+.
+#ozar #ganpati #vighnahartaganesh #ganpatiozar #ashtavinayak #familytime #love #familyfirst #familylife #happy #newyear #happynewyear #love #happy 
+#photooftheday #like #newyears
+#new #january #celebration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

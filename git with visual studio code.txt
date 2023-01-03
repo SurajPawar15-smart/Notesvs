@@ -1,0 +1,155 @@
+update version message:
+stage my changes plus
+and then click mark
+
+
+discard my changes also
+
+
+>npm install
+
+
+8. Git branches
+
+on repository side:
+switch branches/tags: feature/some  =>create branch:
+
+git pull
+
+master view:origin/feature/some
+
+
+9. Git handling conflicts
+10. Git lens
+11. Markdown
+
+markdown languages:
+
+# EmplMonagerBackEnd
+
+Added a new useless feature
+Fix critical problem
+
+## Setup
+
+The project requires npm and nodejs installed.
+
+### Build Project
+1.
+2.
+3.
+
+## Launch server
+
+1.`npm ts-node src/Server.ts`
+2.check localhost ap port [8080](http://localhost:8080/)
+
+## Services:
+| Position | url |
+
+
+=>three dot =>push
+
+
+
+
+
+
+
+
+right click=>open preview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

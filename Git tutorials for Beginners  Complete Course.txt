@@ -1,0 +1,132 @@
+Git tutorials for Beginners - Complete Course
+************************************************
+2. Git Introduction and Installation
+
+Introduction:
+It is used for source code managemenet in softwaredevelopmenet and can be used to keep track of chnages in the files of a project.
+
+Downlaod and install:
+download from official website
+install the compatiable version
+check if git bash and GUI installed
+launch Git bash
+
+download git:windowns
+
+
+3. Git architecture, Git INIT and Git CLONE
+
+
+git init:to initializr a repository on local
+git clone:to clone a remote repo on local
+
+go to git bash:
+git clone 
+
+4. Git ADD :: Working directory to Staging
+
+git add -A
+git add --all
+git add .
+git add *
+
+5. Git COMMIT :: Staging to Local Repository
+git commit -m "put yur message here"
+
+
+6. Git DIFF, Git RM (--cached) and Git RESET --hard
+
+
+git status
+git diff two.txt
+
+git add two.txt
+git status
+git diff two.txt
+git diff --cached two.txt
+
+git reset --hard
+
+
+git rm <filename>
+git em -f <filename>
+git rm --cached <filename>
+git rm -r <folderpath>
+
+
+7. Introduction to branching and project setup
+
+git branch
+git branch <branchname>
+git checkout
+git merge
+git log
+
+8. Git Branch - How to create BRANCHES
+9. Switching between branches
+10. Merging of branches
+11. Git fetch, git pull and git push
+
+12. Git Stash, stash pop, stash list, stash show, stash clear
+
+
+git stash save "1"
+git stash list
+git stash save "2"
+git stash list
+git stash save "3"
+
+git stash save
+git stash list
+git stash apply
+git stash pop
+git stash show
+git stash clear
+git stash drop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************
+Git and Github
+**************************************************
+code with harry
+https://www.youtube.com/watch?v=gwWKnnCMQ5c
+
+anuj bhaiya
+https://www.youtube.com/watch?v=uaeKhfhYE0U
+
+codebasics
+https://www.youtube.com/watch?v=xAAmje1H9YM&list=PLeo1K3hjS3usJuxZZUBdjAcilgfQHkRzW
+
+Github with Visual Studio Code Crash Course (Hindi)
+https://www.youtube.com/watch?v=KgGnTMwSxFU
+Greeky Shows
+
+Kunal Kushwaha- Complete Git and GitHub Tutorial
+https://www.youtube.com/watch?v=apGV9Kg7ics
+
+Git Programming with Mosh
+https://www.youtube.com/watch?v=8JJ101D3knE
+
+FreeCodeCamp- Git and GitHub for Beginners - Crash Course
+https://www.youtube.com/watch?v=RGOj5yH7evk
+
+

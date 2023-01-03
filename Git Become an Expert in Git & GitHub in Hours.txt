@@ -1,0 +1,70 @@
+create a empty repo
+create a folder in local
+git init
+make changes
+git add .
+git commit -m "name of commit"
+git remore add origin link
+git push -u origin master
+
+******************************************
+7. Branching and Merging
+******************************************
+
+created a branch in github
+git pull
+git checkout branchname
+made changes
+git add .
+git commit -m "message"
+git push
+
+1>compare & pull request
+2>pull request
+3>merge pull request
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://github.com/joshnh/Git-Commands
+
+
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
